@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import "./Son.css";
 
 function Son(props) {
@@ -7,12 +6,6 @@ function Son(props) {
       <div className="container">
         <span className="text">{props.text}</span>
       </div>
-=======
-function Son() {
-  return (
-    <>
-      <div>hi</div>
->>>>>>> origin/main
     </>
   );
 }
