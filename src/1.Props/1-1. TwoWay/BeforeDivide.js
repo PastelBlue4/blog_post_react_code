@@ -7,10 +7,11 @@ function BeforeDivide() {
   const onSubmit = (e) => {
     e.preventDefault();
     setIsLogin(true);
-    setUserName(userName);
   };
 
-  const onChange = (e) => {};
+  const onChange = (e) => {
+    setUserName(e.target.value);
+  };
 
   return (
     <>
