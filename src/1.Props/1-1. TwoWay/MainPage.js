@@ -3,9 +3,11 @@ import LoginPage from "./LoginPage";
 
 function MainPage() {
   const [loginID, setLoginID] = useState("");
+
   function loginHandler(userName) {
     setLoginID(userName);
   }
+
   return (
     <>
       {loginID ? (
