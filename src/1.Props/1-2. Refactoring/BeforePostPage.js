@@ -1,10 +1,24 @@
 import { useState } from "react";
-import DataFetch from "./DataFetch";
 
-function PostPage() {
+const data = [
+  {
+    id: "1",
+    comment: "first data",
+  },
+  {
+    id: "2",
+    comment: "second data",
+  },
+  {
+    id: "3",
+    comment: "third data",
+  },
+];
+
+function BeforePostPage() {
   const [postItem, setPostItem] = useState();
 
-  const getData = (data) => {
+  const getData = () => {
     setPostItem(data);
   };
 
@@ -17,8 +31,9 @@ function PostPage() {
             <span>{postData.comment}</span>
           </div>
         ))}
-      <DataFetch getData={getData} />
+
+      <button onClick={getData}> 데이터 받아오기 </button>
     </>
   );
 }
-export default PostPage;
+export default BeforePostPage;
