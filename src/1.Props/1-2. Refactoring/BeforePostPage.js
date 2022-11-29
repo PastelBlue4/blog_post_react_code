@@ -22,17 +22,20 @@ function BeforePostPage() {
     setPostItem(data);
   };
 
+  console.log(!!postItem);
   return (
     <>
       {postItem &&
-        postItem.map((postData) => (
-          <div>
+        postItem.map((postData, index) => (
+          <div key={index} style={{ margin: "20px" }}>
             <h2>{postData.id}</h2>
             <span>{postData.comment}</span>
           </div>
         ))}
 
-      <button onClick={getData}> 데이터 받아오기 </button>
+      <button onClick={getData} style={{ margin: "20px" }}>
+        데이터 받아오기
+      </button>
     </>
   );
 }
