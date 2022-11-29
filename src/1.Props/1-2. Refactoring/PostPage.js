@@ -11,8 +11,8 @@ function PostPage() {
   return (
     <>
       {postItem &&
-        postItem.map((postData) => (
-          <div>
+        postItem.map((postData, index) => (
+          <div key={index}>
             <h2>{postData.id}</h2>
             <span>{postData.comment}</span>
           </div>
