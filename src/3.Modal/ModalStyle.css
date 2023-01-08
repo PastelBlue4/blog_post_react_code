@@ -1,0 +1,83 @@
+.ModalContainer {
+  background-color: rgba(134, 134, 134, 0.818);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  transition: all;
+}
+
+.ModalText {
+  font-size: 28px;
+  margin: 10px 0px;
+  font-weight: 500;
+}
+
+.Modal {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px skyblue solid;
+  background-color: aliceblue;
+  width: 70%;
+  height: 60vh;
+}
+
+.Modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.MainContainer {
+  background-color: rgb(213, 250, 250);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ImageContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.ImageContainer img {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+}
+
+.Text {
+  margin: 10px;
+  font-size: 18px;
+  max-width: 70%;
+  font-size: 17px;
+  line-height: 150%;
+}
+
+.ButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.Button {
+  align-items: centers;
+  margin: 10px;
+  padding: 10px 30px;
+  background-color: rgb(145, 184, 255);
+  border: none;
+  border-radius: 6px;
+  font-size: 22px;
+  color: rgb(243, 243, 243);
+  cursor: pointer;
+}
+
+.Button:hover {
+  background-color: rgb(83, 143, 254);
+  color: rgb(255, 255, 255);
+}
