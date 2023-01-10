@@ -24,13 +24,17 @@ export default function Modal() {
         >
           <div className="Modal">
             <h1 className="ModalText">Write your email for save </h1>
+            <span></span>
+            <hr />
             <form>
               <input
+                className="ModalInput"
                 placeholder="E-mail"
                 onChange={(e) => setEmail(e.currentTarget.value)}
               />
 
               <button
+                className="ModalButton"
                 onClick={(e) => {
                   e.preventDefault();
                   setResult(email);
