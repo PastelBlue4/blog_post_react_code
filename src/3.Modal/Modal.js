@@ -23,8 +23,10 @@ export default function Modal() {
           }}
         >
           <div className="Modal">
-            <h1 className="ModalText">Write your email for save </h1>
-            <span></span>
+            <div className="ModalTextContainer">
+              <h1 className="ModalText">글 저장하기!</h1>
+              <span>글을 저장하기 위해 이메일을 입력해주세요.</span>
+            </div>
             <hr />
             <form>
               <input
@@ -41,7 +43,7 @@ export default function Modal() {
                   setOnModal(false);
                 }}
               >
-                save!
+                입력완료!
               </button>
             </form>
           </div>
@@ -81,10 +83,10 @@ export default function Modal() {
               setOnModal(true);
             }}
           >
-            save!
+            저장하기!
           </button>
         </div>
-        <span>{result}</span>
+        {result ? <span>`${result}로 저장했어요!`</span> : null}
       </div>
     </>
   );
