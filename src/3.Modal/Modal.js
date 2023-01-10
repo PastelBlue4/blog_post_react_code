@@ -43,7 +43,7 @@ export default function Modal() {
                   setOnModal(false);
                 }}
               >
-                입력완료!
+                이메일에 저장하기
               </button>
             </form>
           </div>
