@@ -8,7 +8,7 @@
 }
 
 .Modal {
-  margin-top: 15%;
+  margin-top: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,6 +16,7 @@
   background-color: aliceblue;
   width: 40%;
   height: 60vh;
+  max-width: 600px;
 }
 
 .Modal hr {
@@ -25,7 +26,7 @@
 
 .ModalText {
   font-size: 28px;
-  margin: 30px;
+  margin: 20px 0px;
   font-weight: 500;
 }
 
@@ -41,7 +42,6 @@
   width: 80%;
   height: 30px;
   font-size: 15px;
-  color: red;
   padding: 10px;
   border: none;
   background-color: rgb(233, 233, 233);
@@ -76,7 +76,7 @@
 .ModalTextContainer {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+
   width: 80%;
 }
 

@@ -10,6 +10,7 @@ export default function Modal() {
   const [onModal, setOnModal] = useState(false);
   const [email, setEmail] = useState();
   const [result, setResult] = useState();
+
   return (
     <>
       {onModal ? (
@@ -17,6 +18,7 @@ export default function Modal() {
           className="ModalContainer"
           ref={modal}
           onClick={(e) => {
+            console.log(modal.current);
             if (e.target === modal.current) {
               setOnModal(false);
             }
@@ -24,8 +26,8 @@ export default function Modal() {
         >
           <div className="Modal">
             <div className="ModalTextContainer">
-              <h1 className="ModalText">글 저장하기!</h1>
-              <span>글을 저장하기 위해 이메일을 입력해주세요.</span>
+              <h1 className="ModalText">게시글 저장하기!</h1>
+              <span>게시글을 저장하기 위해 이메일을 입력해주세요.</span>
             </div>
             <hr />
             <form>
@@ -86,7 +88,7 @@ export default function Modal() {
             저장하기!
           </button>
         </div>
-        {result ? <span>`${result}로 저장했어요!`</span> : null}
+        {result ? <span>{result}로 저장했어요!</span> : null}
       </div>
     </>
   );
